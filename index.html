@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Library 2025</title>
+</head>
+<body>
+    <h1>Odin Library 25</h1>
+    <div class="container">
+        <button id="add-book-button">Add Book</button>
+        <form id='form' action="#">
+            <fieldset class="fieldset-flex-col">
+                <label for="title">Title:</label>
+                <input type="text" name="title" id="title" placeholder="Book Title">
+            </fieldset>
+            <fieldset class="fieldset-flex-col">
+                <label for="title">Author:</label>
+                <input type="text" name="author" id="author" placeholder="Author Name">
+            </fieldset>
+            <fieldset class="fieldset-flex-col">
+                <label for="pages">Pages:</label>
+                <input type="number" name="pages" id="pages" placeholder="Page Number">
+            </fieldset>
+            <fieldset class="fieldset-flex-row">
+                <label for="read">Read:</label>
+                <input type="checkbox" id="read" name="read">
+            </fieldset>
+            <button id="submit-button" type="submit">Submit</button>
+        </form>
+        <div class="library-grid">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
