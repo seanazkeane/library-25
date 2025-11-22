@@ -20,7 +20,21 @@ function hideBookForm() {
     addBookButton.hidden = false;
 }
 
+// Class constructor for creating the books
 
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+    toggleRead() {
+        this.read = !this.read;
+    }
+}
+
+/*
 // Constuctor functoin for creating a book
 function Book(title, author, pages, read) {
     if (!new.target) {
@@ -36,6 +50,7 @@ function Book(title, author, pages, read) {
     }
 
   }
+*/
 
 // Function to add the book to library on form submit
 function addBookToLibrary(event) {
